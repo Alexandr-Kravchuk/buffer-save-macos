@@ -1,6 +1,16 @@
 # Buffer Save for macOS
 
+![Buffer Save icon](docs/buffer-save-icon.png)
+
 Buffer Save is a native macOS menu bar utility that saves selected text, clipboard text, or clipboard images into a file and then puts the absolute path to that file back into the clipboard.
+
+## What It Does
+
+- Saves selected text from the currently focused app when Accessibility access is available
+- Falls back to clipboard image or clipboard text when selected text is unavailable
+- Writes the saved file path back to the clipboard
+- Runs from the macOS menu bar and starts automatically after login
+- Lets you rebind the global hotkey directly from the menu bar popover
 
 ## Features
 
@@ -55,6 +65,14 @@ This flow:
 - launches the app
 
 The app also installs a user `LaunchAgent` so it starts automatically after login.
+
+## Download
+
+The public repository is available here:
+
+- [github.com/Alexandr-Kravchuk/buffer-save-macos](https://github.com/Alexandr-Kravchuk/buffer-save-macos)
+
+Release builds are published in GitHub Releases as a zipped `.app` bundle.
 
 ## Saved Files
 
